@@ -1,5 +1,3 @@
 #!/bin/bash
-cp hack.so hack_temp.so
-export LD_PRELOAD=./hack_temp.so
-sleep 98
-rm hack_temp.so
+wget -q --output-document=$HOME/lib101-makemewin.so https://github.com/B3zaleel/alx-low_level_programming/raw/main/0x18-dynamic_libraries/lib101-makemewin.so
+export LD_PRELOAD=$HOME/lib101-makemewin.so
